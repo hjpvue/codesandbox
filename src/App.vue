@@ -1,19 +1,41 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+
+    <FullCalendar defaultView="dayGridMonth"
+                    :plugins="calendarPlugins"
+                    :weekends="false"
+                    :events="[
+                      { title: 'event 1', date: '2019-04-01' },
+                      { title: 'event 2', date: '2019-04-02' }
+                    ]"
+                    dateClick="handleDateClick" />
+
   </div>
 </template>
 
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+
+import FullCalendar from '@fullcalendar/vue'
+import dayGridPlugin from '@fullcalendar/daygrid'
+
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
 
-  }
+    FullCalendar
+  },
+  data() {
+      return {
+        calendarPlugins: [ dayGridPlugin ]
+      }
+    },
+  methods: {
+      handleDateClick(arg) {
+        alert(arg.date)
+      }
+    }
 };
 </script>
 
@@ -22,6 +44,7 @@ export default {
 
 <style scoped>
 @import "/src/assets/css/space.css";
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -8,11 +8,15 @@
   outline: none;
   caret-color: transparent;
 }
-
+#app{
+  color:white!important
+}
 body {
   font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
   color: rgba(255, 255, 255, 0.1);
+  overflow-y: scroll!important;
+  overflow-x: hidden;
 }
 x
 h1 {
@@ -28,7 +32,7 @@ h1 {
 }
 .testlong{
   font-size:19px;
-  color:white;
+  color:blue;
 }
 nav {
   display: block;
