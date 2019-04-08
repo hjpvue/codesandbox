@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5749f626-b562-4c82-8627-fe3ed5a3a56e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/data.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.vue" afterPath="$PROJECT_DIR$/src/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/master.css" afterPath="$PROJECT_DIR$/src/assets/css/master.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/space.css" afterPath="$PROJECT_DIR$/src/assets/css/space.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" afterPath="$PROJECT_DIR$/src/components/HelloWorld.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -373,12 +366,12 @@
       <updated>1554500107810</updated>
       <workItem from="1554500110472" duration="1162000" />
       <workItem from="1554529218652" duration="743000" />
-      <workItem from="1554716930400" duration="2915000" />
+      <workItem from="1554716930400" duration="2991000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4820000" />
+    <option name="totallyTimeSpent" value="4896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
