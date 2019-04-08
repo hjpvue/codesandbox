@@ -1,0 +1,221 @@
+@import "master-space.scss";
+@keyframes "pulse" {
+	from {
+		background: #000;
+	}
+	25% {
+		background-color: #003;
+	}
+	50% {
+		background-color: #030;
+	}
+	to {
+		background: #000;
+	}
+}
+@keyframes "fogAnimation" {
+	from {
+		-webkit-transform: rotate(0deg);
+		background-position: 0 center;
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+		background-position: 1000px center;
+	}
+}
+@keyframes "glowAnimation" {
+	from {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.75;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes "lightAnimation" {
+	from {
+		opacity: 0.25;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 0.25;
+	}
+}
+@keyframes "starsLarge" {
+	from {
+		-webkit-transform: rotate(0deg) scale(3);
+		opacity: 0.1;
+	}
+	to {
+		-webkit-transform: rotate(360deg) scale(0.5);
+		opacity: 0;
+	}
+}
+@keyframes "starsLargeAlt" {
+	from {
+		-webkit-transform: rotate(180deg) scale(3);
+		opacity: 0.25;
+	}
+	to {
+		-webkit-transform: rotate(360deg) scale(0.5);
+		opacity: 0;
+	}
+}
+@keyframes "starsSmall" {
+	from {
+		-webkit-transform: rotate(360deg) scale(3);
+		opacity: 0.25;
+	}
+	to {
+		-webkit-transform: rotate(0deg) scale(0.5);
+		opacity: 0;
+	}
+}
+@keyframes "starsSmallAlt" {
+	from {
+		-webkit-transform: rotate(0deg) scale(3);
+		opacity: 0.1;
+	}
+	to {
+		-webkit-transform: rotate(360deg) scale(0.5);
+		opacity: 0;
+	}
+}
+body {
+	background: #000;
+	overflow: hidden;
+	-moz-webkit-animation-name: pulse;
+	-moz-webkit-animation-duration: 30s;
+	-moz-webkit-animation-iteration-count: infinite;
+	-moz-webkit-animation-timing-function: linear;
+}
+p {
+	z-index: 0;
+	color: rgba(0, 0, 0, 0);
+}
+#fog {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 2000px;
+	height: 2000px;
+	margin-top: -1000px;
+	margin-left: -1000px;
+	opacity: 0.5;
+	background: url(../img/fog.png) repeat-x 0 center;
+	-moz-webkit-animation-name: fogAnimation;
+	-moz-webkit-animation-duration: 30s;
+	-moz-webkit-animation-iteration-count: infinite;
+	-moz-webkit-animation-timing-function: linear;
+}
+#fog-2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 2000px;
+	height: 2000px;
+	margin-top: -1000px;
+	margin-left: -1000px;
+	opacity: 0.5;
+	background: url(../img/fog.png) repeat-x 0 center;
+	-moz-webkit-animation-name: fogAnimation;
+	-moz-webkit-animation-duration: 30s;
+	-moz-webkit-animation-iteration-count: infinite;
+	-moz-webkit-animation-timing-function: linear;
+	opacity: 1;
+	-moz-webkit-animation-duration: 120s;
+}
+#glow {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 800px;
+	height: 800px;
+	margin: -400px 0 0 -400px;
+	background: url(../img/glow.png) repeat-x 0 0;
+	-moz-webkit-animation-name: glowAnimation;
+	-moz-webkit-animation-duration: 5s;
+	-moz-webkit-animation-iteration-count: infinite;
+	-moz-webkit-animation-timing-function: linear;
+}
+#light {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 800px;
+	height: 800px;
+	margin: -400px 0 0 -400px;
+	background: url(../img/light.png) no-repeat center center;
+	-moz-webkit-animation-name: lightAnimation;
+	-moz-webkit-animation-duration: 1s;
+	-moz-webkit-animation-iteration-count: infinite;
+	-moz-webkit-animation-timing-function: linear;
+}
+#stars {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 600px;
+	height: 600px;
+	margin: -300px 0 0 -300px;
+	background: url(../img/stars-large.png) no-repeat center center;
+	-moz-webkit-animation-name: starsLarge;
+	-moz-webkit-animation-duration: 60s;
+	-moz-webkit-animation-iteration-count: infinite;
+	-moz-webkit-animation-timing-function: linear;
+}
+#stars-2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 600px;
+	height: 600px;
+	margin: -300px 0 0 -300px;
+	background: url(../img/stars-large.png) no-repeat center center;
+	-moz-webkit-animation-name: starsLarge;
+	-moz-webkit-animation-duration: 60s;
+	-moz-webkit-animation-iteration-count: infinite;
+	-moz-webkit-animation-timing-function: linear;
+	-moz-webkit-animation-name: starsLargeAlt;
+	-moz-webkit-animation-duration: 45s;
+	-moz-webkit-animation-iteration-count: infinite;
+	-moz-webkit-animation-timing-function: linear;
+}
+#small-stars {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 600px;
+	height: 600px;
+	margin: -300px 0 0 -300px;
+	background: url(../img/stars-large.png) no-repeat center center;
+	-moz-webkit-animation-name: starsLarge;
+	-moz-webkit-animation-duration: 60s;
+	-moz-webkit-animation-iteration-count: infinite;
+	-moz-webkit-animation-timing-function: linear;
+	background: url(../img/stars-small.png) no-repeat center center;
+	-moz-webkit-animation-duration: 15s;
+	-moz-webkit-animation-name: starsSmall;
+}
+#small-stars-2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 600px;
+	height: 600px;
+	margin: -300px 0 0 -300px;
+	background: url(../img/stars-large.png) no-repeat center center;
+	-moz-webkit-animation-name: starsLarge;
+	-moz-webkit-animation-duration: 60s;
+	-moz-webkit-animation-iteration-count: infinite;
+	-moz-webkit-animation-timing-function: linear;
+	background: url(../img/stars-small.png) no-repeat center center;
+	-moz-webkit-animation-duration: 15s;
+	-moz-webkit-animation-name: starsSmall;
+	-moz-webkit-animation-name: starsSmallAlt;
+	-moz-webkit-animation-duration: 30s;
+}

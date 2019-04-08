@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	text-decoration: none;
+	border: none;
+	list-style: none;
+	outline: none;
+	background-color: transparent;
+}
+
+body {
+	font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	color: rgba(255, 255, 255, 0.75);
+}
+h1 {
+	text-align: center;
+	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	z-index: 50;
+	position: relative;
+}
+nav {
+	display: block;
+	z-index: 75;
+	position: relative;
+	a {
+		color: #fff;
+		color: rgba(255, 255, 255, 0.75);
+		text-decoration: underline;
+		position: relative;
+		&:hover {
+			color: #fff;
+		}
+		&:focus {
+			color: #fff;
+		}
+		&:active {
+			top: 1px;
+		}
+	}
+	ul {
+		li {
+			float: left;
+			padding: 10px;
+			margin-top: -40px;
+		}
+		#back {
+			a {
+				&:before {
+					content: "â† ";
+				}
+			}
+		}
+		#source {
+			float: right;
+		}
+	}
+}
